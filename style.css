@@ -2,6 +2,8 @@
     padding: 0;
     border: 0;
     margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -26,40 +28,30 @@ body {
     font-family: cursive;
 }
 
-.list-page {
-    background-color:rgb(227,245,201);
-}
+
 
 .product-image {
     padding-right: 1em;
-    border-right: 1px dotted black;
+    max-width: 270vw;
+    max-height: 180vw;
 }
 
 .descript {
     padding-left: 1em;
 }
-thead h1 {
-    color:#000; 
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
+
 
 #back-button:hover {
     cursor: pointer;
-    width: 150px;
+    width: 300px;
 }
 
-tbody tr:nth-child(1) {
-    padding: 3em;
-}
 
 .nav-header {
     color:#3c3c3c; 
     text-shadow: 0 0 3px #FF0000;
 }
 
-th a:hover {
-    cursor: grab;
-}
 
 img:not(#back-button, .background-image) {
     width: 600;
@@ -69,5 +61,99 @@ img:not(#back-button, .background-image) {
 img:not(#back-button, .background-image):active {
     width: 700;
     height: 350;
+}
+
+/*responsive design
+*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+    color: white;
+}
+
+.nav-item {
+    display: flex;
+    
+}
+ 
+.nav-item a{
+    text-decoration: none;
+    color: white;
+}
+
+.puppy-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+.header-item {
+    align-self: center;
+}
+
+.product-container {
+    display: grid;
+    padding: 1em;
+    text-align: left;
+
+}
+
+.product-items {
+    display: flex;
+    text-align: center;
+}
+
+.product-desc {
+    padding-top: 1em;
+    font-size: larger;
+}
+
+table {
+    font-size: larger;
+}
+td {
+    padding-left: 1em;
+}
+
+
+.button {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 10px 30px;
+  }
 }
 
