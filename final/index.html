@@ -1,0 +1,28 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <title> Random Quote Generator</title>
+    <link rel="stylesheet" href="final.css"> 
+    <link rel="icon" type="image/png" sizes="64x64" href="../Namu's Pet icon.png">
+    <script src="quote.js"></script>
+
+  </head>
+  <body>
+    <div id="container">
+      <div class="quotearea">
+        <h3 id="quotespace"></h3>
+        <h4 id="quoteauthor"></h4>
+      </div>
+      <div class="buttonarea">
+        <button id="quotebutton" onclick="quote()" class="button">Generate Quote</button>
+      </div>
+    </div>
+    <div>
+      <button id="historybutton" onclick="history()" class="button"><img src="history.png" height="25px"></button>
+    </div>
+    <div id="historyarea">
+      <div id="quotehistory"></div>
+    </div>
+    
+</body>
+</html>

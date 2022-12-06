@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body {
+    background-image:url('https://media2.giphy.com/media/frFqCW3keJvODF5PMy/giphy.gif?cid=ecf05e47hgcp082b4np3j933hyvtxghz2yjghkyvfynwg0rx&rid=giphy.gif&ct=g');
+    background-size: cover; 
+    padding: 0.5em;
+    display: flex;
+    text-align: center;
+}
+
+p {
+    padding: 1em;
+}
+
+/*button style*/
+.button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 10em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #FFC229;
+  box-shadow: #deb791f0 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+    .button {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+
+  #container {
+    padding-left: 3em;
+    padding-top: 5em;
+    text-align: center;
+    flex: 70%;
+    color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size: larger;
+    }
+
+    body{
+        flex-direction: column;
+    }
+
+    #container {
+        padding-left: 0;
+        padding-top: 3em;
+        text-align: center;
+        flex: 70%;
+        color: #FFFFFF;
+    }
+}
+
+
+.quotearea{
+    padding: 2em;
+    text-align: center;
+    background-color: #333232;
+    border-radius: 3em;
+}
+
+#quoteauthor{
+    text-align: center;
+}
+
+.buttonarea{
+    padding: 2em;
+    flex: 5%;
+}
+
+#historyarea{
+    display: none;
+    flex: 25%;
+    background-color: #333232;
+    color: #FFFFFF;
+    border-radius: 3em;
+    padding: 1em;
+    text-align: left;
+    overflow: scroll;    
+}
+
+#historybutton:hover {
+    cursor: pointer;
+}
+
+
