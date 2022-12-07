@@ -72,7 +72,7 @@ p {
 
 @media only screen and (max-width: 768px) {
     * {
-        font-size: larger;
+        font-size: large;
     }
 
     body{
@@ -81,7 +81,7 @@ p {
 
     #container {
         padding-left: 0;
-        padding-top: 3em;
+        padding-top: 2em;
         text-align: center;
         flex: 70%;
         color: #FFFFFF;
