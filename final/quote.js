@@ -7,7 +7,7 @@ function quote(){
 
 function display_quote(d){
     document.getElementById('quotespace').innerHTML = d.content;
-    document.getElementById('quoteauthor').innerHTML = d.author;
+    document.getElementById('quoteauthor').innerHTML = '-' + d.author;
     document.getElementById('quotehistory').innerHTML = '<p>'+d.content+'<br><i>'+ d.author+'</i></p>' + temp;
     temp = document.getElementById('quotehistory').innerHTML;
 }

@@ -97,7 +97,8 @@ p {
 }
 
 #quoteauthor{
-    text-align: center;
+    text-align: right;
+    padding-top: 0.5em;
 }
 
 .buttonarea{
